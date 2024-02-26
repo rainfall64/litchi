@@ -7,6 +7,20 @@ litchi::point2::point2() : x(0.0), y(0.0) { }
 litchi::point2::point2(f64 i) : x(i), y(i) { }
 litchi::point2::point2(f64 x, f64 y) : x(x), y(y) { }
 
+// Copy constructor
+litchi::point2::point2(const point2& other) : x(other.x), y(other.y) { }
+
+// Assignment operator
+litchi::point2& litchi::point2::operator=(const point2& other)
+{
+    if ( this != &other )
+    {
+        x = other.x;
+        y = other.y;
+    }
+    return *this;
+}
+
 // Utilities
 inline f64 litchi::point2::euclidean_distance_to(const point2& other)
 {

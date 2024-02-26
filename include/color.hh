@@ -56,4 +56,4 @@ private:
 };
 }
 
-#endif
+#endif // !LITCHI_COLOR_HH

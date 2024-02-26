@@ -20,6 +20,12 @@ public:
     point2(f64 i) : x(i), y(i) { }
     point2(f64 x, f64 y) : x(x), y(y) { }
 
+    // Copy constructor
+    point2(const point2& other);
+
+    // Assignment operator
+    point2& operator=(const point2& other);
+
     // Destructor
     ~point2() = default;
 
@@ -35,4 +41,4 @@ public:
 };
 }
 
-#endif
+#endif // !LITCHI_POINT2_HH

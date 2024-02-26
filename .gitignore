@@ -1,0 +1,6 @@
+.vscode/
+build/
+config/
+lib/
+dependencies/
+src/point2.cc
